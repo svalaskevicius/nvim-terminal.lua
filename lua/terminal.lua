@@ -93,12 +93,12 @@ local function resolve_attributes(rgb_color_table, attrs, attributes)
 			attributes.gui = 'NONE'
 		elseif v == 39 then
 			-- Reset to normal color for foreground
-			attributes.ctermfg = 'fg'
-			attributes.guifg = 'fg'
+			attributes.ctermfg = 'NONE'
+			attributes.guifg = 'NONE'
 		elseif v == 49 then
 			-- Reset to normal color for background
-			attributes.ctermbg = 'bg'
-			attributes.guibg = 'bg'
+			attributes.ctermbg = 'NONE'
+			attributes.guibg = 'NONE'
 		elseif v == 1 then
 			attributes.cterm = 'bold'
 			attributes.gui = 'bold'
